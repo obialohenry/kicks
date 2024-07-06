@@ -25,7 +25,11 @@ class KicksProductsViewModel extends ChangeNotifier {
           final decodedResponse = jsonDecode(value.toString());
           _kicksProducts = decodedResponse["items"];
           notifyListeners();
-          Navigator.push(context, MaterialPageRoute(builder: (context) => ProductsScreen()));
+          Future.delayed(
+              const Duration(milliseconds: 300),
+              await Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => ProductsScreen())));
+      
           _gettingKicksProducts = false;
           notifyListeners();
         } else {
