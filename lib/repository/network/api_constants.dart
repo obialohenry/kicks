@@ -15,9 +15,9 @@ class ApiConstants {
         path: path,
         queryParameters: {
           "organization_id": organizationId,
-          "reverse_sort": false,
-          "page": 1,
-          "size": 10,
+          "reverse_sort": "false",
+          "page": "1",
+          "size": "10",
           "Appid": appId,
           "Apikey": apiKey,
         },
@@ -25,8 +25,11 @@ class ApiConstants {
 
 // //*! can be modified
   Map<String, String> apiHeader = {
-    HttpHeaders.contentTypeHeader: 'application/json',
+    // HttpHeaders.contentTypeHeader: 'application/json',
+    HttpHeaders.acceptEncodingHeader: "gzip",
     HttpHeaders.acceptHeader: '*/*',
+    HttpHeaders.connectionHeader: "Keep-alive"
+    
   };
 
   // Map<String, String> apiHeaderWithToken = {

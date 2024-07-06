@@ -61,14 +61,14 @@ class ApiService extends ApiConstants {
         // log(response.data);
 
         responseJson = json.decode(response.data.toString());
-        status = responseJson['status'] as String;
-        message = responseJson[
-            'message']; //TODO: work on this message and status, make sure it's exactly the message from the api.
-        if (message != null) {
-          debugPrint(
-            '$status\n$message',
-          );
-        }
+        // status = responseJson['page'];
+        // message = responseJson[
+        //     'size']; //TODO: work on this message and status, make sure it's exactly the message from the api.
+        // if (message != null) {
+        //   debugPrint(
+        //     '$status\n$message',
+        //   );
+        // }
 
         return response.data;
       case 201:
