@@ -78,13 +78,16 @@ class KicksProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(18),
+        color: AppColors.kSoftGreenShade,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            height: 120,
+            height: 100,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(18),
               image: DecorationImage(
@@ -102,7 +105,6 @@ class KicksProduct extends StatelessWidget {
               fontWeight: FontWeight.w400,
             ),
           ),
-          const Gap(5),
           Text(
             "₦$productPrice",
             style: const TextStyle(
@@ -114,5 +116,6 @@ class KicksProduct extends StatelessWidget {
         ],
       ),
     );
+    
   }
 }
