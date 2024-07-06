@@ -35,8 +35,8 @@ This app allows users to view and browse through all the products of my shoe ret
 ![product_screen](https://github.com/obialohenry/kicks/assets/108239673/46c15bc5-4a62-47ee-93b5-98e79402134d)
 
 
-## The link to my AppTize.
-![appetize link]([https://appetize.io/app/b_pg4icwkbsiguwh6auu7hfbxfs4])
+## The link to my AppeTize.
+![appetize link](https://appetize.io/app/b_pg4icwkbsiguwh6auu7hfbxfs4)
 
 
 
